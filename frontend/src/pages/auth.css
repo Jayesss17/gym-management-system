@@ -1,0 +1,123 @@
+/* Root variables */
+:root {
+  --primary: #ff512f;
+  --secondary: #dd2476;
+  --bg-light: #f5f5f5;
+  --bg-dark: #121212;
+  --card-light: #ffffff;
+  --card-dark: #1e1e1e;
+  --text-light: #333;
+  --text-dark: #f5f5f5;
+}
+
+/* Page container */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  font-family: "Segoe UI", sans-serif;
+  padding: 15px;
+}
+
+/* Card */
+.auth-card {
+  background: var(--card-light);
+  color: var(--text-light);
+  padding: 30px;
+  width: 100%;
+  max-width: 360px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Dark mode */
+.auth-card.dark {
+  background: var(--card-dark);
+  color: var(--text-dark);
+}
+
+/* Gym icon */
+.auth-icon {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+/* Title */
+.auth-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.auth-card input {
+  width: 100%;
+  padding: 11px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.auth-card.dark input {
+  background: #2a2a2a;
+  color: white;
+  border: 1px solid #444;
+}
+
+/* Button */
+.auth-card button {
+  width: 100%;
+  padding: 11px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.auth-card button:hover {
+  opacity: 0.9;
+}
+
+/* Links */
+.auth-link {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.auth-link a {
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
+/* Toggle */
+.theme-toggle {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 13px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 22px;
+  }
+
+  .auth-icon {
+    font-size: 36px;
+  }
+}

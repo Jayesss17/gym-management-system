@@ -1,0 +1,70 @@
+/* ===== HOME HERO LIVE EFFECT ===== */
+.home-hero {
+  position: relative;
+  height: 85vh;
+  overflow: hidden;
+}
+
+/* Background image with slow zoom (live wallpaper feel) */
+.home-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center 15%;
+  animation: slowZoom 25s ease-in-out infinite;
+  transform-origin: center;
+  filter: brightness(1.15) contrast(1.05);
+  z-index: 1;
+}
+
+/* Dark animated overlay */
+.home-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  animation: overlayPulse 6s ease-in-out infinite;
+  z-index: 2;
+}
+
+/* Hero content */
+.home-hero-content {
+  position: relative;
+  z-index: 3;
+  animation: fadeUp 1.5s ease forwards;
+}
+
+/* Animations */
+@keyframes slowZoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes overlayPulse {
+  0%,
+  100% {
+    background: rgba(0, 0, 0, 0.45);
+  }
+  50% {
+    background: rgba(0, 0, 0, 0.55);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

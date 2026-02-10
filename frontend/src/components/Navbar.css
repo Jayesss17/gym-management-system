@@ -1,0 +1,72 @@
+.navbar {
+  background-color: #ffffff;
+  padding: 12px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* ===== Brand ===== */
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.navbar-brand span:first-child {
+  color: #000;
+}
+
+.navbar-brand span:last-child {
+  color: #ff3c00;
+}
+
+/* ===== Links Container ===== */
+.navbar-links {
+  display: flex;
+  gap: 22px;
+
+  /* 🔥 Bullet dot removal fix */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Extra safety: ensure no bullets on li */
+.navbar-links li {
+  list-style: none;
+}
+
+/* ===== Link Style ===== */
+.navbar-links a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #ff3c00;
+}
+
+/* ===== Logout Button ===== */
+.navbar-logout {
+  background-color: #ff3c00;
+  color: white;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-logout:hover {
+  background-color: #e63200;
+}

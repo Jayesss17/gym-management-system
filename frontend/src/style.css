@@ -1,0 +1,65 @@
+/* ===== Global Background ===== */
+body {
+    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ===== Navbar Styling ===== */
+  .navbar-custom {
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    padding: 15px;
+  }
+  
+  .navbar-custom a {
+    color: white;
+    font-weight: bold;
+    margin-right: 20px;
+    text-decoration: none;
+  }
+  
+  .navbar-custom a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ===== Page Card Container ===== */
+  .container-box {
+    background: white;
+    color: black;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+  }
+  
+  /* ===== Custom Button ===== */
+  .btn-custom {
+    background: #dd2476;
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-custom:hover {
+    background: #ff512f;
+  }
+  
+  /* ===== Home Page Section Text Styling ===== */
+  #about, .home-section {
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.5px;
+  }
+  
+  /* ===== Review Cards Hover Effect ===== */
+  .home-review-card {
+    transition: transform 0.3s ease;
+  }
+  
+  .home-review-card:hover {
+    transform: scale(1.05);
+  }
+  
