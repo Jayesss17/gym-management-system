@@ -11,7 +11,7 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:3000",
-    "https://gym-management-system-z25i.onrender.com"
+    "https://gym-management-frontend-ak5o.onrender.com"
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"]
