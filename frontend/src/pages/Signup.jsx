@@ -25,7 +25,7 @@ export default function Signup() {
     }
 
     try {
-      await API.post("/api/auth/signup", form);
+      await API.post("/auth/signup", form);
       alert("Signup successful. Please login.");
       navigate("/login");
     } catch {

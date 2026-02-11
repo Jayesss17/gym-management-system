@@ -19,7 +19,7 @@ export default function Login() {
     }
 
     try {
-      const res = await API.post("/api/auth/login", form);
+      const res = await API.post("/auth/login", form);
       localStorage.setItem("token", res.data.token);
       window.location.replace("/");
     } catch {
