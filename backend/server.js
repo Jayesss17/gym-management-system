@@ -18,6 +18,9 @@ app.use(cors({
 }));
 
 app.use(express.json());
+app.get("/test", (req, res) => {
+  res.send("Auth route test working");
+});
 
 // ROUTES
 app.use("/api/members", require("./routes/memberRoutes"));
